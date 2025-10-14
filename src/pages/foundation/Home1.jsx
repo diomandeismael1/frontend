@@ -17,7 +17,7 @@ const Home1 = () => {
                 <Typography variant="h6">1. Fondamentaux des tests</Typography>
             </AccordionSummary>
             <AccordionDetails className='detail'>
-                <Link to="/1.1"><Typography variant="body1">1.1-Le processus de test </Typography></Link>
+                <Link to="/1.1"><Typography variant="body1">1.1-qu'est ce que le test </Typography></Link>
             </AccordionDetails>
         </Accordion>
         

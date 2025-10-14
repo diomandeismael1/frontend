@@ -7,6 +7,7 @@ import Processus2 from "./pages/processus";
 import Quiz_23 from "./pages/GestionDefaut_23";
 import Dashboard from "./pages/Dashboard";
 import Home1 from "./pages/foundation/Home1";
+import Quiz_testfoudation from "./pages/foundation/TestFoudation_1";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="1.1" element={<Processus/>} />
       <Route path="2.3" element={<Quiz_23/>} />
       <Route path="processus" element={<Processus2/>} />
+      <Route path="/foundation1" element={<Quiz_testfoudation/>} />
 
       
       

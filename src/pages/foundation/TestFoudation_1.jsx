@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useWindowSize } from 'react-use';
 import { CheckCircle, XCircle, RotateCcw, BookOpen, Award } from 'lucide-react';
 
-const Quiz_23 = () => {
+const Quiz_testfoudation1 = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
@@ -557,4 +557,4 @@ const questions = [
   );
 };
 
-export default Quiz_23;
+export default Quiz_testfoudation1;

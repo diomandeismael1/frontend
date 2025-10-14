@@ -13,305 +13,306 @@ const Quiz_23 = () => {
 const questions = [
     {
       id: 1,
-      level: "K2",
-      section: "2.3.1",
-      question: "Quel est l'état INITIAL d'un rapport de défaut dans un cycle de vie simple des défauts ?",
+      level: "K1",
+      section: "1.1.1",
+      question: "Selon le Syllabus ISTQB, quel est l'objectif principal du test en relation avec la qualité du produit ?",
       options: [
-        "A) EN COURS",
-        "B) OUVERT (ou NOUVEAU)",
-        "C) RÉSOLU",
-        "D) FERMÉ"
+        "A) Garantir l'absence de défauts dans le logiciel.",
+        "B) Établir le coût total de propriété (TCO).",
+        "C) Réduire le niveau de risque d’une qualité inadéquate et obtenir la confiance.",
+        "D) Uniquement trouver des défauts pour améliorer la productivité du développeur."
       ],
-      correct: 1,
-      explanation: "Selon le syllabus, l'état initial lorsque le rapport de défaut est créé est OUVERT (peut être appelé NOUVEAU). C'est le point de départ du cycle de vie du défaut.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.1 'Cycle de vie des défauts' - Page 59"
+      correct: 2,
+      explanation: "Les objectifs principaux sont de trouver des défauts, de réduire les risques d’une qualité inadéquate et d’obtenir la confiance dans la qualité de l’objet de test.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.1.1 'Objectifs du test'"
     },
     {
       id: 2,
       level: "K2",
-      section: "2.3.1",
-      question: "Dans quel état un rapport de défaut passe-t-il lorsque l'équipe travaille sur sa correction ?",
+      section: "1.1.2",
+      question: "Quelle activité est décrite comme étant le processus de diagnostic et de correction de la cause d'une défaillance dans le code ?",
       options: [
-        "A) OUVERT",
-        "B) EN COURS",
-        "C) RÉSOLU",
-        "D) REJETÉ"
+        "A) Test de confirmation.",
+        "B) Test de régression.",
+        "C) Débogage.",
+        "D) Test d'intégration."
       ],
-      correct: 1,
-      explanation: "L'état EN COURS indique que l'équipe travaille activement sur l'analyse et/ou la correction du rapport de défaut. C'est l'état de travail actif sur le défaut.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.1 'Cycle de vie des défauts' - Page 59"
+      correct: 2,
+      explanation: "Le débogage est l'activité qui suit la découverte d'une défaillance (par le test) et qui consiste à analyser la cause (le défaut) et à la corriger.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.1.2 'Test et débogage'"
     },
     {
       id: 3,
       level: "K2",
-      section: "2.3.1",
-      question: "Qui est généralement responsable de faire passer un défaut à l'état FERMÉ après un test de confirmation réussi ?",
+      section: "1.2.1",
+      question: "Laquelle des affirmations suivantes décrit le mieux une contribution directe du test à un développement logiciel réussi ?",
       options: [
-        "A) Le développeur qui a corrigé le défaut",
-        "B) Le chef de projet",
-        "C) Le testeur qui exécute le test de confirmation",
-        "D) Le comité de gestion des défauts"
+        "A) Le test garantit que tous les problèmes de performances seront résolus avant la production.",
+        "B) Le test réduit le risque d'impacts négatifs d'une défaillance sur l'entreprise ou les utilisateurs.",
+        "C) Le test augmente l'indépendance des développeurs par rapport aux testeurs.",
+        "D) Le test est l'activité la plus coûteuse du cycle de vie du logiciel."
       ],
-      correct: 2,
-      explanation: "Le syllabus indique que le testeur fait passer le rapport de défaut à l'état FERMÉ, soit après un test de confirmation réussi, soit pour confirmer le rejet du rapport de défaut.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.1 'Cycle de vie des défauts' - Page 59"
+      correct: 1,
+      explanation: "Le test réduit le risque de défaillances après la mise en production, protégeant ainsi l'entreprise contre les conséquences négatives.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.2.1 'Contributions du test au succès'"
     },
     {
       id: 4,
-      level: "K3",
-      section: "2.3.1",
-      question: "Vous concevez un cycle de vie des défauts pour votre organisation. Quelle bonne pratique devriez-vous suivre ?",
+      level: "K2",
+      section: "1.2.2",
+      question: "Quelle est la relation entre l'Assurance Qualité (AQ) et le Test ?",
       options: [
-        "A) Utiliser plusieurs états terminaux (FERMÉ, ANNULÉ, ARCHIVÉ)",
-        "B) Permettre que deux états consécutifs appartiennent au même rôle responsable sans justification",
-        "C) N'utiliser qu'un seul état terminal (ex: FERMÉ) avec raison de fermeture",
-        "D) Créer un cycle de vie différent pour chaque projet"
+        "A) L'AQ et le Test sont des termes synonymes.",
+        "B) L'AQ se concentre principalement sur la détection des défauts dans les produits finaux, tandis que le Test est axé sur le processus.",
+        "C) Le Test est une activité de Contrôle Qualité qui contribue à l'objectif plus large de l'AQ en se concentrant sur le produit.",
+        "D) L'AQ est toujours effectuée par des équipes externes ; le Test est toujours effectué en interne."
       ],
       correct: 2,
-      explanation: "Le syllabus recommande de n'utiliser qu'un seul état terminal (par exemple, FERMÉ). Le passage à cet état exige souvent de choisir une raison de fermeture, utile pour l'évaluation du processus et les activités d'amélioration. Il est aussi recommandé de définir le cycle de vie à l'échelle de l'organisation.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.1 'Cycle de vie des défauts' - Bonnes pratiques - Page 60"
+      explanation: "Le Test est une activité de Contrôle Qualité (CQ) qui cherche les défauts dans le produit, tandis que l'Assurance Qualité (AQ) est orientée processus et cherche à prévenir les défauts.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.2.2 'Test et assurance qualité'"
     },
     {
       id: 5,
       level: "K2",
-      section: "2.3.1",
-      question: "Pourquoi est-il recommandé de représenter les défauts dupliqués et les faux positifs par un état distinct ?",
+      section: "1.2.3",
+      question: "Un programmeur commet une erreur humaine (méprise) en écrivant le code. Quelle est la séquence correcte de la chaîne causale (ISTQB) résultant de cette erreur ?",
       options: [
-        "A) Pour impressionner le management",
-        "B) Car ils peuvent être utiles lors d'analyses de défauts plus poussées pour l'amélioration du processus",
-        "C) Pour compliquer le workflow",
-        "D) Car c'est obligatoire selon la norme ISO"
+        "A) Erreur → Défaut → Défaillance",
+        "B) Défaillance → Défaut → Erreur",
+        "C) Défaut → Erreur → Défaillance",
+        "D) Défaillance → Erreur → Défaut"
       ],
-      correct: 1,
-      explanation: "Le syllabus indique que les défauts dupliqués et les faux positifs doivent être représentés par un état distinct ou une combinaison de l'état REJETÉ avec la raison du rejet. Ils peuvent être utiles lors d'analyses de défauts plus poussées dans le but d'améliorer le processus de test.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.1 'Cycle de vie des défauts' - Bonnes pratiques - Page 60"
+      correct: 0,
+      explanation: "Une personne fait une **Erreur** (faute humaine) → L'erreur crée un **Défaut** (bug) → L'exécution du défaut peut entraîner une **Défaillance** (résultat non conforme).",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.2.3 'Erreurs, défauts, défaillances et causes racine'"
     },
     {
       id: 6,
       level: "K2",
-      section: "2.3.2",
-      question: "Qui est généralement propriétaire du processus global de gestion des défauts ?",
+      section: "1.2.3",
+      question: "Qu'est-ce qu'un **Défaut** (ou 'Bug') dans la terminologie ISTQB ?",
       options: [
-        "A) L'équipe de développement",
-        "B) Le chef de projet uniquement",
-        "C) L'organisation de test et le Test Manager",
-        "D) Le fournisseur externe"
+        "A) La manifestation visible d'un comportement non conforme (la Défaillance).",
+        "B) L'erreur humaine (faute) commise par un membre de l'équipe.",
+        "C) Un problème dans un composant ou un système qui peut amener le composant ou le système à échouer à exécuter sa fonction requise.",
+        "D) La cause fondamentale du problème qui conduit à l'erreur."
       ],
       correct: 2,
-      explanation: "Le syllabus indique que bien que l'organisation de test et le Test Manager soient souvent propriétaires du processus global de gestion des défauts et de l'outil de gestion des défauts, une équipe cross-fonctionnelle est généralement responsable de la gestion des défauts pour un projet donné.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.2 'Gestion cross-fonctionnelle des défauts' - Page 60"
+      explanation: "Un Défaut est un problème statique dans un artefact (comme le code) qui peut, une fois exécuté, provoquer un échec (Défaillance).",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.2.3 'Erreurs, défauts, défaillances et causes racine'"
     },
     {
       id: 7,
       level: "K2",
-      section: "2.3.2",
-      question: "Quel est le rôle du comité de gestion des défauts (comité de triage) ?",
+      section: "1.3.1",
+      question: "Quel principe de test est le plus fortement soutenu par l'idée de l'Analyse des Valeurs Limites et du Partitionnement par Équivalence ?",
       options: [
-        "A) Uniquement corriger les défauts",
-        "B) Déterminer si chaque défaut doit être corrigé, rejeté ou reporté",
-        "C) Exécuter les tests de confirmation",
-        "D) Développer l'outil de gestion des défauts"
+        "A) Principe 3 : Les tests précoces font économiser du temps et de l’argent.",
+        "B) Principe 4 : Les défauts se regroupent.",
+        "C) Principe 7 : L’absence d’erreurs est une illusion.",
+        "D) Principe 2 : Le test exhaustif est impossible."
       ],
-      correct: 1,
-      explanation: "Le comité de gestion des défauts (parfois appelé comité de triage) doit déterminer si chaque rapport de défaut représente un défaut valable et s'il doit être corrigé, rejeté ou reporté. Pour prendre cette décision, le comité tient compte des avantages, des risques et des coûts associés à la correction du défaut.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.2 'Gestion cross-fonctionnelle des défauts' - Page 60"
+      correct: 3,
+      explanation: "Puisqu'il est impossible de tester exhaustivement (Principe 2), les techniques de conception de tests (comme l'analyse des valeurs limites) sont utilisées pour sélectionner un sous-ensemble efficace et suffisant de cas de test.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.3.1 'Principes du test'"
     },
     {
       id: 8,
       level: "K2",
-      section: "2.3.2",
-      question: "Qui peut faire partie du comité de gestion des défauts ?",
+      section: "1.3.1",
+      question: "Lequel des principes du test est lié à l'idée que, même sans défauts, le système peut ne pas être utile au client s'il ne répond pas à ses besoins ?",
       options: [
-        "A) Uniquement les testeurs",
-        "B) Test Manager, représentants du développement, fournisseurs, gestion de projet, Product Owner",
-        "C) Uniquement le management",
-        "D) Uniquement les développeurs"
+        "A) Principe 1 : Le test montre la présence de défauts, pas leur absence.",
+        "B) Principe 4 : Les défauts se regroupent.",
+        "C) Principe 5 : Attention aux tests non pertinents.",
+        "D) Principe 6 : Le test dépend du contexte."
       ],
-      correct: 1,
-      explanation: "Le syllabus indique que le comité de gestion des défauts peut comprendre le Test Manager, des représentants du développement, des fournisseurs, des représentants de la gestion de projet, de la gestion de produit ou du Product Owner et d'autres parties prenantes qui ont un intérêt dans le logiciel testé.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.2 'Gestion cross-fonctionnelle des défauts' - Page 60"
+      correct: 2,
+      explanation: "Le 'Principe 7 : L’absence d’erreurs est une illusion' (ou 'falalcy of absence of errors') rappelle que trouver et corriger des défauts n'est pas utile si le système construit ne répond pas aux besoins (n'est pas utilisable ou pertinent).",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.3.1 'Principes du test'"
     },
     {
       id: 9,
-      level: "K2",
-      section: "2.3.3",
-      question: "Dans les équipes Agile, quand un rapport de défaut formel devrait-il être créé ?",
+      level: "K1",
+      section: "1.4.1",
+      question: "Quelle est l'activité du processus de test de base où les cas de test détaillés sont écrits, l'environnement de test est mis en place et la suite de tests est organisée ?",
       options: [
-        "A) Pour tous les défauts sans exception",
-        "B) Pour les défauts qui bloquent le sprint ou ne peuvent pas être résolus dans la même itération",
-        "C) Jamais, la communication orale suffit toujours",
-        "D) Uniquement en fin de projet"
+        "A) Planification des tests.",
+        "B) Conception des tests.",
+        "C) Implémentation et exécution des tests.",
+        "D) Clôture des tests."
       ],
-      correct: 1,
-      explanation: "Le syllabus indique que des rapports de défaut devraient être créés pour : les défauts qui bloquent d'autres activités du sprint, les défauts qui ne peuvent pas être résolus au cours de la même itération, les défauts qui doivent être résolus par d'autres équipes ou fournisseurs, et lorsqu'un rapport est explicitement demandé.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.3 'Particularités de la gestion des défauts dans les équipes en mode Agile' - Page 61"
+      correct: 2,
+      explanation: "L'Implémentation et l'exécution impliquent de finaliser le testware, d'établir l'environnement et d'exécuter les procédures de test.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.4.1 'Activités et tâches de test'"
     },
     {
       id: 10,
       level: "K2",
-      section: "2.3.3",
-      question: "Quelle est une pratique courante pour gérer les défauts qui ne peuvent pas être résolus dans une itération Agile ?",
+      section: "1.4.2",
+      question: "Comment le contexte du projet (ex: un projet Agile avec des itérations courtes) est-il susceptible d'influencer le processus de test ?",
       options: [
-        "A) Les ignorer complètement",
-        "B) Les ajouter au backlog du produit pour priorisation",
-        "C) Les transférer automatiquement à un fournisseur externe",
-        "D) Les archiver immédiatement"
+        "A) Il exigera une augmentation de la documentation formelle pour les revues.",
+        "B) Il nécessitera que les activités de test soient effectuées de manière séquentielle, à la fin de l'itération.",
+        "C) Il promouvra des cycles de test plus courts, des boucles de feedback rapides et des tests intégrés au développement ('shift-left').",
+        "D) Il éliminera le besoin de toute planification ou surveillance des tests."
       ],
-      correct: 1,
-      explanation: "Le syllabus indique que la pratique courante consiste à ajouter les défauts qui ne peuvent pas être résolus dans la même itération au backlog du produit afin qu'ils puissent être classés par ordre de priorité parmi d'autres défauts et User Stories pour une itération ultérieure.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.3 'Particularités de la gestion des défauts dans les équipes en mode Agile' - Page 61"
+      correct: 2,
+      explanation: "Le contexte Agile met l'accent sur les cycles courts, les retours rapides, l'intégration continue et l'exécution précoce des tests ('shift-left').",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.4.2 'Le processus de test selon le contexte'"
     },
     {
       id: 11,
       level: "K2",
-      section: "2.3.3",
-      question: "Quels facteurs devraient influencer le niveau de formalité de la gestion des défauts en Agile ?",
+      section: "1.4.3",
+      question: "Quel terme ISTQB désigne les éléments sur lesquels les tests sont basés, tels que les spécifications des exigences ou les modèles de conception ?",
       options: [
-        "A) Uniquement le nombre de testeurs",
-        "B) Colocalisation, répartition géographique, nombre d'équipes, maturité, taille, risques",
-        "C) La couleur du logo de l'entreprise",
-        "D) Le jour de la semaine"
+        "A) Les Objets de test.",
+        "B) La Base de test.",
+        "C) Le Testware.",
+        "D) Les Données de test."
       ],
       correct: 1,
-      explanation: "Le syllabus liste plusieurs facteurs : colocalisation des membres de l'équipe, répartition entre différents fuseaux horaires, nombre d'équipes coopérant, maturité de l'équipe, taille de l'équipe, risques associés au produit, et exigences réglementaires ou contractuelles.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.3 'Particularités de la gestion des défauts dans les équipes en mode Agile' - Page 61"
+      explanation: "La Base de test est l'information requise pour planifier et concevoir les tests, comme les exigences, les spécifications ou le code.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.4.3 'Testware'"
     },
     {
       id: 12,
       level: "K2",
-      section: "2.3.4",
-      question: "Quel est un défi majeur de la gestion des défauts dans le développement logiciel hybride ?",
+      section: "1.4.4",
+      question: "Quelle est la raison principale du maintien de la **traçabilité** bidirectionnelle entre les cas de test et la base de test ?",
       options: [
-        "A) Le coût des ordinateurs",
-        "B) L'alignement sur les attributs des défauts et les outils entre différentes équipes",
-        "C) La couleur des post-it utilisés",
-        "D) Le choix du langage de programmation"
+        "A) Pour garantir qu'il n'y ait qu'un seul testeur par cas de test.",
+        "B) Pour permettre de mesurer la couverture des tests et d'évaluer l'impact des changements.",
+        "C) Pour automatiser l'exécution des tests sans intervention humaine.",
+        "D) Pour remplacer la nécessité d'une gestion formelle des défauts."
       ],
       correct: 1,
-      explanation: "Le syllabus identifie l'alignement sur les attributs des défauts et les outils comme un défi majeur. Dans un scénario idéal, toutes les équipes utilisent un seul outil, mais dans la pratique, il est courant que chaque équipe utilise un outil différent, nécessitant une synchronisation.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.4 'Défis liés à la gestion des défauts dans le développement de logiciels hybride' - Page 62"
+      explanation: "La traçabilité aide à s'assurer que toutes les exigences sont couvertes par les tests et à identifier quels tests sont affectés par un changement dans les exigences.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.4.4 'Traçabilité entre base de test et testware'"
     },
     {
       id: 13,
       level: "K2",
-      section: "2.3.4",
-      question: "Comment peut-on améliorer l'alignement du plan de test dans un environnement hybride ?",
+      section: "1.4.5",
+      question: "Quel rôle a pour principale responsabilité l'analyse de la base de test et la définition des conditions de test, ainsi que la conception des cas de test ?",
       options: [
-        "A) En ignorant les équipes Agile",
-        "B) Par la participation active de toutes les équipes au processus de planification",
-        "C) En imposant un modèle unique sans consultation",
-        "D) En gardant tous les plans secrets"
+        "A) Le Développeur.",
+        "B) Le Test Manager (Chef de Test).",
+        "C) L'Analyste de Test (ou Testeur).",
+        "D) L'Analyste Affaires (Business Analyst)."
       ],
-      correct: 1,
-      explanation: "Le syllabus recommande un meilleur alignement par la participation active des membres de toutes les équipes au processus de planification (par exemple, la participation des équipes du modèle séquentiel aux réunions Agile où les défauts sont discutés). La transparence peut être améliorée en partageant les plans entre équipes.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.4 'Défis liés à la gestion des défauts dans le développement de logiciels hybride' - Page 62"
+      correct: 2,
+      explanation: "Le Testeur (ou l'Analyste de Test) est le rôle principalement responsable de l'analyse, de la conception des tests et de l'exécution des tests.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.4.5 'Rôles dans le test'"
     },
     {
       id: 14,
-      level: "K3",
-      section: "2.3.5",
-      question: "Quelles informations sont OBLIGATOIRES dans un rapport de défaut pour la plupart des environnements ?",
+      level: "K2",
+      section: "1.5.1",
+      question: "Laquelle de ces compétences est la plus essentielle pour qu'un testeur puisse rédiger des rapports de défauts clairs et non conflictuels ?",
       options: [
-        "A) Le nom du testeur uniquement",
-        "B) Titre, description détaillée, sévérité, priorité",
-        "C) Uniquement un numéro d'identification",
-        "D) La solution proposée uniquement"
+        "A) Compétence en analyse statique du code.",
+        "B) Compétence en communication écrite et interpersonnelle.",
+        "C) Compétence en gestion de projet.",
+        "D) Compétence en déploiement continu."
       ],
       correct: 1,
-      explanation: "Le syllabus indique que pour gérer un rapport de défaut dans la plupart des environnements, les éléments obligatoires sont : un titre avec bref résumé, une description détaillée avec étapes de reproduction, la sévérité de l'impact, et la priorité de correction.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.5 'Informations des rapports de défaut' - Page 63"
+      explanation: "Une bonne communication (écrite/verbale) est fondamentale pour rapporter efficacement les défauts aux développeurs et autres parties prenantes.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.5.1 'Compétences génériques requises pour le test'"
     },
     {
       id: 15,
       level: "K2",
-      section: "2.3.5",
-      question: "Quelles données sont généralement créées automatiquement par l'outil de gestion des défauts ?",
+      section: "1.5.2",
+      question: "L'approche 'équipe intégrée' (Integrated Team Approach) est favorisée pour le test. Quel est l'avantage principal de cette approche ?",
       options: [
-        "A) La description détaillée du défaut",
-        "B) Identifiant unique, date/heure de création, nom du créateur, état actuel",
-        "C) La solution au problème",
-        "D) Les étapes de reproduction"
+        "A) Elle garantit un niveau d'indépendance très élevé pour le testeur.",
+        "B) Elle favorise l'appropriation partagée de la qualité et une meilleure collaboration avec le développement.",
+        "C) Elle élimine la nécessité d'outils de gestion des défauts.",
+        "D) Elle réduit la nécessité de tests d'acceptation par les utilisateurs."
       ],
       correct: 1,
-      explanation: "Le syllabus liste les données automatiquement créées par l'outil : identifiant unique, date/heure de création, nom de la personne qui a découvert/signalé l'anomalie, projet et phase, état actuel, propriétaire actuel, et historique des modifications.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.5 'Informations des rapports de défaut' - Page 63"
+      explanation: "L'approche intégrée encourage les testeurs à travailler au sein de l'équipe de développement, partageant la responsabilité de la qualité.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.5.2 'Approche équipe intégrée'"
     },
     {
       id: 16,
       level: "K2",
-      section: "2.3.5",
-      question: "Pourquoi devrait-on limiter les attributs collectés dans un rapport de défaut ?",
+      section: "1.5.3",
+      question: "Un développeur est chargé de tester ses propres modules de code. Quel type d'inconvénient est le plus susceptible de se produire en raison du manque d'indépendance des tests ?",
       options: [
-        "A) Pour économiser de l'espace disque",
-        "B) Car chaque attribut supplémentaire augmente le temps et peut accroître la confusion",
-        "C) Pour cacher des informations",
-        "D) Car c'est plus joli visuellement"
+        "A) Un manque de connaissance approfondie du code.",
+        "B) Le « biais de confirmation » qui conduit à tester ce qui fonctionne plutôt que ce qui est le plus risqué.",
+        "C) Un coût élevé du test dû à l'utilisation de ressources externes.",
+        "D) Des retards dus à l'absence de documentation de la base de test."
       ],
       correct: 1,
-      explanation: "Le syllabus indique que chaque attribut supplémentaire augmente le temps consacré au rapport de défauts et peut accroître la confusion de la personne qui saisit le rapport. Il est donc conseillé de ne collecter que les données nécessaires à la gestion des défauts et/ou qui seront utilisées pour l'amélioration du processus.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.5 'Informations des rapports de défaut' - Page 63"
+      explanation: "Le manque d'indépendance conduit souvent à un manque d'objectivité, où la personne testant son propre travail est plus susceptible d'exercer un 'biais de confirmation' (tester ce qu'elle pense qui fonctionne).",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.5.3 'Indépendance du test'"
     },
     {
       id: 17,
-      level: "K2",
-      section: "2.3.5",
-      question: "Quelles informations aident à la résolution des défauts ?",
+      level: "K1",
+      section: "1.3.1",
+      question: "Selon les principes du test, à quel moment l'activité de test devrait-elle commencer ?",
       options: [
-        "A) Le nom du testeur uniquement",
-        "B) Le sous-système/composant, l'élément de test, sa version, l'environnement de test",
-        "C) La couleur de l'interface",
-        "D) Le nombre de lignes de code"
+        "A) Seulement après que le codage soit terminé.",
+        "B) Le plus tôt possible dans le cycle de vie du développement ('shift-left').",
+        "C) Uniquement lorsque le Test Manager a rédigé le Plan de Test final.",
+        "D) Immédiatement après que le premier défaut ait été corrigé."
       ],
       correct: 1,
-      explanation: "Le syllabus indique que pour aider à la résolution des défauts, les informations utiles incluent : le sous-système ou composant où se situe le défaut, l'élément du test spécifique et son numéro de version, et l'environnement de test dans lequel le défaut a été observé.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.5 'Informations des rapports de défaut' - Page 63"
+      explanation: "Le 'Principe 3 : Les tests précoces font économiser du temps et de l’argent' est l'un des principes fondamentaux.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.3.1 'Principes du test'"
     },
     {
       id: 18,
       level: "K2",
-      section: "2.3.6",
-      question: "Comment les informations sur les phases d'introduction, détection et élimination des défauts peuvent-elles être utilisées ?",
+      section: "1.3.1",
+      question: "Lequel des principes suivants explique pourquoi les testeurs doivent constamment modifier leurs techniques de test pour rester efficaces ?",
       options: [
-        "A) Pour décorer les rapports",
-        "B) Pour évaluer le confinement de phase et effectuer une analyse du coût de la qualité",
-        "C) Pour augmenter le nombre de réunions",
-        "D) Pour réduire le nombre de testeurs"
+        "A) Principe 2 : Le test exhaustif est impossible.",
+        "B) Principe 4 : Les défauts se regroupent.",
+        "C) Principe 6 : Le test dépend du contexte.",
+        "D) Principe 5 : Attention aux tests non pertinents (effet pesticide)."
       ],
-      correct: 1,
-      explanation: "Le syllabus indique que l'utilisation des informations relatives aux phases d'introduction, de détection et d'élimination des défauts permet d'évaluer le confinement de phase et/ou d'effectuer une analyse du coût de la qualité dans le but de suggérer des moyens d'améliorer l'efficacité de la détection des défauts.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.6 'Définition des actions d'amélioration du processus à l'aide des rapports de défaut' - Page 64"
+      correct: 3,
+      explanation: "L'effet pesticide (Principe 5) stipule que l'utilisation répétée des mêmes tests cesse d'être efficace pour trouver de nouveaux défauts, nécessitant une révision et une modification des tests.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.3.1 'Principes du test'"
     },
     {
       id: 19,
       level: "K2",
-      section: "2.3.6",
-      question: "À quoi servent les informations sur les défauts dupliqués et rejetés ?",
+      section: "1.4.1",
+      question: "Lors de quelle activité du processus de test de base doit-on évaluer les critères de sortie (exit criteria) et préparer le Rapport de Clôture du Test ?",
       options: [
-        "A) À rien du tout",
-        "B) À évaluer la qualité de la création des rapports de défauts",
-        "C) À augmenter le nombre de défauts",
-        "D) À remplacer les testeurs"
+        "A) Planification des tests.",
+        "B) Surveillance et contrôle des tests.",
+        "C) Clôture des tests.",
+        "D) Conception des tests."
       ],
-      correct: 1,
-      explanation: "Le syllabus indique que l'utilisation d'informations sur les défauts dupliqués et rejetés permet d'évaluer la qualité de la création des rapports de défauts, ce qui peut mener à des améliorations du processus de reporting.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.6 'Définition des actions d'amélioration du processus à l'aide des rapports de défaut' - Page 64"
+      correct: 2,
+      explanation: "La Clôture des tests est l'activité qui a lieu à la fin du projet (ou de l'itération) et comprend l'évaluation des critères de sortie et la capitalisation (leçons apprises).",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.4.1 'Activités et tâches de test'"
     },
     {
       id: 20,
       level: "K2",
-      section: "2.3.6",
-      question: "Quel est l'impact de ne pas suivre les défauts pendant certaines phases du SDLC ?",
+      section: "1.5.3",
+      question: "Quel est l'avantage principal d'une indépendance de test accrue ?",
       options: [
-        "A) Amélioration de la qualité",
-        "B) Réduction considérable de la visibilité sur les capacités du processus",
-        "C) Augmentation de la motivation des testeurs",
-        "D) Aucun impact"
+        "A) Elle facilite la communication avec les développeurs.",
+        "B) Elle augmente la familiarité avec le code source.",
+        "C) Elle réduit la documentation de test.",
+        "D) Elle augmente l'efficacité pour trouver de nouveaux défauts en raison d'une perspective objective."
       ],
-      correct: 1,
-      explanation: "Le syllabus indique que bien que la décision de ne pas suivre les défauts soit souvent prise au nom de l'efficience, elle réduit considérablement la visibilité sur les capacités du processus de développement et de test de logiciels, rendant les améliorations difficiles à mettre en œuvre en raison d'un manque de données fiables.",
-      reference: "Syllabus ISTQB Test Management v3.0 - Section 2.3.6 'Définition des actions d'amélioration du processus à l'aide des rapports de défaut' - Page 64-65"
+      correct: 3,
+      explanation: "L'indépendance permet d'éviter les préjugés et d'aborder le produit avec une perspective plus objective, ce qui est généralement plus efficace pour trouver de nouveaux types de défauts.",
+      reference: "Syllabus ISTQB CTFL v4.0 - Section 1.5.3 'Indépendance du test'"
     }
-  ];
+];
+
   const handleAnswerSelect = (index) => {
     if (showExplanation) return;
     setSelectedAnswer(index);

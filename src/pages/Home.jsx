@@ -20,10 +20,12 @@ const Home = () => {
                 <Link to="/1.1"><Typography variant="body1">1.1-Le processus de test </Typography></Link>
             </AccordionDetails>
             <AccordionDetails className='detail'>
-                <Typography variant="body1">1.2 Le contexte du test </Typography>
+                <Link to="/testcontext">
+                    <Typography variant="body1">1.2 Le contexte du test </Typography>
+                </Link>
             </AccordionDetails>
             <AccordionDetails className='detail'>
-                <Typography variant="body1">1.3 Test basé sur les risques </Typography>
+                    <Typography variant="body1">1.3 Test basé sur les risques </Typography>
             </AccordionDetails>
             <AccordionDetails className='detail'>
                 <Typography variant="body1">1.4 La stratégie de test du projet</Typography>

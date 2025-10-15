@@ -8,6 +8,8 @@ import Quiz_23 from "./pages/GestionDefaut_23";
 import Dashboard from "./pages/Dashboard";
 import Home1 from "./pages/foundation/Home1";
 import Quiz_testfoudation from "./pages/foundation/TestFoudation_1";
+import TestContext from "./pages/TestContext1_2";
+import Quiz_testfoudation2 from "./pages/foundation/TestFoundation_1_2";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
       <Route path="2.3" element={<Quiz_23/>} />
       <Route path="processus" element={<Processus2/>} />
       <Route path="/foundation1" element={<Quiz_testfoudation/>} />
+      <Route path="/testcontext" element={<TestContext/>} />
+      <Route path="/foundation1.2" element={<Quiz_testfoudation2/>} />
 
       
       

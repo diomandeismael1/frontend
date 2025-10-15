@@ -19,6 +19,11 @@ const Home1 = () => {
             <AccordionDetails className='detail'>
                 <Link to="/foundation1"><Typography variant="body1">questionnaire 1</Typography></Link>
             </AccordionDetails>
+            <AccordionDetails className='detail'>
+                <Link to="/foundation1.2">
+                    <Typography variant="body1">questionnaire 2</Typography>
+                </Link>
+            </AccordionDetails>
         </Accordion>
         
     </div>

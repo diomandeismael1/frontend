@@ -25,7 +25,9 @@ const Home = () => {
                 </Link>
             </AccordionDetails>
             <AccordionDetails className='detail'>
+                <Link to="/testrisk">
                     <Typography variant="body1">1.3 Test basé sur les risques </Typography>
+                </Link>
             </AccordionDetails>
             <AccordionDetails className='detail'>
                 <Typography variant="body1">1.4 La stratégie de test du projet</Typography>

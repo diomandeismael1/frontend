@@ -20,11 +20,11 @@ const questions = [
       "Parmi les parties prenantes suivantes, lesquelles sont principalement responsables de la spécification des exigences et de la définition du niveau de qualité requis ?",
     options: [
       "C) Les développeurs uniquement",
-      "A) Les testeurs et test leads",
       "B) Les chefs de projet, Product Owners et utilisateurs métier",
+      "A) Les testeurs et test leads",
       "D) L'équipe d'exploitation"
     ],
-    correct: 2,
+    correct: 1,
     explanation:
       "Le syllabus indique que les chefs de projet, Product Owners et utilisateurs métier spécifient les exigences, définissent le niveau de qualité requis et recommandent la couverture nécessaire basée sur les risques perçus. Ils participent également aux tests d'acceptation utilisateurs (UAT).",
     reference:
@@ -34,19 +34,18 @@ const questions = [
     id: 2,
     level: "K2",
     section: "1.2.1",
-    question:
-      "Quel rôle joue l'équipe d'exploitation en tant que partie prenante des tests ?",
+    question: "Quel rôle joue l'équipe d'exploitation en tant que partie prenante des tests ?",
     options: [
+      "A) Elle développe le code source",
       "D) Elle remplace les testeurs",
       "B) Elle participe aux tests d'acceptation opérationnelle et définit les exigences non fonctionnelles",
-      "C) Elle crée les cas de test uniquement",
-      "A) Elle développe le code source"
+      "C) Elle crée les cas de test uniquement"
     ],
-    correct: 1,
+    correct: 2,
     explanation:
-      "Le syllabus précise que l'équipe d'exploitation est engagée dans les tests d'acceptation opérationnelle, elle veille à ce que le système soit prêt pour la production et contribue à la définition des exigences non fonctionnelles.",
+      "L'équipe d'exploitation est engagée dans les tests d'acceptation opérationnelle, veille à la préparation à la production et contribue à la définition des exigences non fonctionnelles.",
     reference:
-      "Syllabus ISTQB Test Management v3.0 - Section 1.2.1 'Les parties prenantes du test' - Page 21"
+      "Syllabus ISTQB Test Management v3.0 - Section 1.2.1 - Page 21"
   },
   {
     id: 3,
@@ -55,14 +54,14 @@ const questions = [
     question:
       "Quelle est l'utilité PRINCIPALE de la matrice des parties prenantes (matrice pouvoir-intérêt) ?",
     options: [
-      "D) Éliminer les parties prenantes",
-      "B) Hiérarchiser l'engagement des parties prenantes et gérer les attentes de manière efficiente",
+      "A) Augmenter le budget du projet",
       "C) Réduire le nombre de testeurs",
-      "A) Augmenter le budget du projet"
+      "B) Hiérarchiser l'engagement des parties prenantes et gérer les attentes de manière efficiente",
+      "D) Éliminer les parties prenantes"
     ],
-    correct: 1,
+    correct: 2,
     explanation:
-      "Le syllabus indique que la matrice des parties prenantes aide les Test Managers à hiérarchiser l'engagement et à gérer les attentes efficacement.",
+      "La matrice pouvoir-intérêt aide à hiérarchiser l'engagement et à gérer les attentes efficacement.",
     reference:
       "Syllabus ISTQB Test Management v3.0 - Section 1.2.2 - Page 22"
   },
@@ -72,10 +71,10 @@ const questions = [
     section: "1.2.2",
     question:
       "Comment sont appelées les parties prenantes avec une influence élevée et un intérêt élevé dans la matrice ?",
-    options: ["B) Promoteurs", "C) Latents", "A) Apathiques", "D) Défenseurs"],
+    options: ["B) Promoteurs", "A) Apathiques", "C) Latents", "D) Défenseurs"],
     correct: 0,
     explanation:
-      "Les Promoteurs sont des collaborateurs clés ayant une grande influence et un grand intérêt.",
+      "Les Promoteurs ont une grande influence et un grand intérêt, essentiels pour la stratégie de test.",
     reference:
       "Syllabus ISTQB Test Management v3.0 - Section 1.2.2 - Page 22"
   },
@@ -85,10 +84,10 @@ const questions = [
     section: "1.2.2",
     question:
       "Quelle catégorie de parties prenantes a une influence élevée mais un faible intérêt ?",
-    options: ["C) Latents", "A) Promoteurs", "B) Défenseurs", "D) Apathiques"],
-    correct: 0,
+    options: ["D) Apathiques", "C) Latents", "A) Promoteurs", "B) Défenseurs"],
+    correct: 1,
     explanation:
-      "Les Latents ont une influence élevée mais un faible intérêt.",
+      "Les Latents ont une influence élevée mais un faible intérêt, bien que leurs décisions soient critiques.",
     reference:
       "Syllabus ISTQB Test Management v3.0 - Section 1.2.2 - Page 22"
   },
@@ -101,12 +100,12 @@ const questions = [
     options: [
       "B) Les maintenir engagées avec des mises à jour régulières et leur participation à des discussions spécifiques",
       "D) Réduire leur niveau d'intérêt",
-      "C) Les transformer en développeurs",
-      "A) Les ignorer complètement"
+      "A) Les ignorer complètement",
+      "C) Les transformer en développeurs"
     ],
     correct: 0,
     explanation:
-      "Les Défenseurs doivent être maintenues engagées par des mises à jour régulières et leur participation à des discussions spécifiques.",
+      "Les Défenseurs doivent être maintenues engagées grâce à des mises à jour régulières.",
     reference:
       "Syllabus ISTQB Test Management v3.0 - Section 1.2.2 - Page 22"
   },
@@ -117,14 +116,14 @@ const questions = [
     question:
       "Pourquoi une organisation utiliserait-elle un modèle de développement logiciel HYBRIDE ?",
     options: [
-      "D) Pour éliminer tous les tests",
-      "B) Pour faciliter la transition vers Agile ou s'adapter à des besoins spécifiques (projets à haut risque)",
       "A) Pour compliquer inutilement le processus",
+      "B) Pour faciliter la transition vers Agile ou s'adapter à des besoins spécifiques (projets à haut risque)",
+      "D) Pour éliminer tous les tests",
       "C) Pour réduire la qualité du produit"
     ],
     correct: 1,
     explanation:
-      "Les modèles hybrides facilitent la transition vers Agile ou permettent de s’adapter à des besoins spécifiques.",
+      "Les modèles hybrides facilitent la transition vers Agile ou s’adaptent à des projets spécifiques.",
     reference:
       "Syllabus ISTQB Test Management v3.0 - Section 1.2.3 - Page 23"
   },
@@ -135,14 +134,14 @@ const questions = [
     question:
       "Dans un framework hybride, que doit évaluer le Test Manager concernant l'équipe ?",
     options: [
-      "B) La compréhension et la facilité de l'équipe à effectuer une transition transparente entre méthodologies",
       "A) Uniquement le salaire des membres",
-      "C) La couleur des vêtements",
-      "D) Le nombre de pauses café"
+      "B) La compréhension et la facilité de l'équipe à effectuer une transition transparente entre méthodologies",
+      "D) Le nombre de pauses café",
+      "C) La couleur des vêtements"
     ],
-    correct: 0,
+    correct: 1,
     explanation:
-      "Le Test Manager doit évaluer la compréhension et la facilité d’adaptation de l’équipe.",
+      "Le Test Manager doit évaluer la capacité de l’équipe à passer d’un modèle à l’autre.",
     reference:
       "Syllabus ISTQB Test Management v3.0 - Section 1.2.3 - Page 23"
   },
@@ -154,13 +153,13 @@ const questions = [
       "Dans un modèle de développement SÉQUENTIEL (ex: modèle en V), comment est réalisée l'estimation des tests ?",
     options: [
       "B) Estimation détaillée précoce pour chaque niveau de test",
-      "A) Estimation itérative, partie de la planification des Stories par itération",
       "C) Pas d'estimation du tout",
-      "D) Estimation uniquement à la fin du projet"
+      "D) Estimation uniquement à la fin du projet",
+      "A) Estimation itérative, partie de la planification des Stories par itération"
     ],
     correct: 0,
     explanation:
-      "Dans les modèles séquentiels, l’estimation est détaillée et précoce pour chaque niveau de test.",
+      "En modèle séquentiel, l’estimation est détaillée et précoce à chaque niveau de test.",
     reference:
       "Syllabus ISTQB Test Management v3.0 - Section 1.2.4 - Page 24"
   },
@@ -178,12 +177,192 @@ const questions = [
     ],
     correct: 0,
     explanation:
-      "En séquentiel, le Test Manager supervise; en itératif, les rôles sont intégrés et collaboratifs.",
+      "En séquentiel, le Test Manager supervise; en Agile, les rôles sont intégrés.",
     reference:
       "Syllabus ISTQB Test Management v3.0 - Section 1.2.4 - Page 24"
+  },
+  {
+    id: 11,
+    level: "K2",
+    section: "1.2.4",
+    question:
+      "Quel type d'outils est CENTRAL dans un modèle de développement itératif (Agile) ?",
+    options: [
+      "C) Aucun outil n'est utilisé",
+      "B) Outils pour CI/CD et l'automatisation",
+      "A) Outils de documentation lourde uniquement",
+      "D) Uniquement des outils de gestion de projet Waterfall"
+    ],
+    correct: 1,
+    explanation:
+      "Les outils de CI/CD et d’automatisation sont essentiels en développement itératif.",
+    reference:
+      "Syllabus ISTQB Test Management v3.0 - Section 1.2.4 - Page 24"
+  },
+  {
+    id: 12,
+    level: "K2",
+    section: "1.2.4",
+    question:
+      "Comment le suivi et le reporting diffèrent-ils entre les modèles séquentiels et itératifs ?",
+    options: [
+      "D) Séquentiel: pas de reporting; Itératif: rapports annuels",
+      "A) Il n'y a pas de reporting en Agile",
+      "B) Séquentiel: rapports basés sur des jalons; Itératif: reporting continu avec tableaux de bord en temps réel",
+      "C) Le reporting est identique"
+    ],
+    correct: 2,
+    explanation:
+      "En séquentiel, les rapports sont basés sur des jalons; en itératif, ils sont continus et en temps réel.",
+    reference:
+      "Syllabus ISTQB Test Management v3.0 - Section 1.2.4 - Page 24"
+  },
+  {
+    id: 13,
+    level: "K2",
+    section: "1.2.5",
+    question:
+      "Pour les tests de COMPOSANTS (tests unitaires), quelle activité le Test Manager doit-il réaliser ?",
+    options: [
+      "C) Exécuter personnellement tous les tests unitaires",
+      "B) Définir le périmètre, objectifs et critères de clôture; impliquer les testeurs dans les revues de code",
+      "A) Ignorer complètement ce niveau de test",
+      "D) Éliminer les tests unitaires"
+    ],
+    correct: 1,
+    explanation:
+      "Le Test Manager définit le périmètre, les objectifs et implique les testeurs dans les revues de code.",
+    reference:
+      "Syllabus ISTQB Test Management v3.0 - Section 1.2.5 - Page 25"
+  },
+  {
+    id: 14,
+    level: "K2",
+    section: "1.2.5",
+    question:
+      "Pour les tests d'ACCEPTATION, que doit coordonner le Test Manager ?",
+    options: [
+      "B) La logistique des tests d'acceptation, faciliter les tests sur site client, gérer les tests UAT",
+      "A) Uniquement les tests unitaires",
+      "C) L'architecture du système",
+      "D) Le développement du code"
+    ],
+    correct: 0,
+    explanation:
+      "Le Test Manager coordonne la logistique et facilite les tests sur site client.",
+    reference:
+      "Syllabus ISTQB Test Management v3.0 - Section 1.2.5 - Page 25"
+  },
+  {
+    id: 15,
+    level: "K2",
+    section: "1.2.6",
+    question:
+      "Que comprend le management des tests FONCTIONNELS ?",
+    options: [
+      "D) Tests de sécurité uniquement",
+      "A) Uniquement les tests de performance",
+      "B) Planification stratégique alignée sur les exigences fonctionnelles et coordination des ressources",
+      "C) Ignorer toutes les exigences fonctionnelles"
+    ],
+    correct: 2,
+    explanation:
+      "Le management des tests fonctionnels inclut la planification stratégique alignée sur les exigences.",
+    reference:
+      "Syllabus ISTQB Test Management v3.0 - Section 1.2.6 - Page 26"
+  },
+  {
+    id: 16,
+    level: "K2",
+    section: "1.2.6",
+    question:
+      "Que doit faire le Test Manager pour les tests NON-FONCTIONNELS ?",
+    options: [
+      "D) Remplacer tous les tests fonctionnels par des tests non-fonctionnels",
+      "B) Établir des benchmarks de performance et superviser les tests de conformité aux normes",
+      "A) Les ignorer complètement",
+      "C) Se concentrer uniquement sur les tests fonctionnels"
+    ],
+    correct: 1,
+    explanation:
+      "Le Test Manager établit des benchmarks et supervise les tests de conformité aux normes.",
+    reference:
+      "Syllabus ISTQB Test Management v3.0 - Section 1.2.6 - Page 26"
+  },
+  {
+    id: 17,
+    level: "K2",
+    section: "1.2.6",
+    question:
+      "Pour les tests BOÎTE BLANCHE, que doit gérer le Test Manager ?",
+    options: [
+      "C) Ignorer la structure interne du code",
+      "B) L'optimisation de la couverture du code et l'intégration des connaissances techniques",
+      "A) Uniquement les interfaces utilisateur",
+      "D) Se concentrer uniquement sur les tests boîte noire"
+    ],
+    correct: 1,
+    explanation:
+      "Le Test Manager supervise la couverture du code et l’intégration des connaissances techniques.",
+    reference:
+      "Syllabus ISTQB Test Management v3.0 - Section 1.2.6 - Page 26"
+  },
+  {
+    id: 18,
+    level: "K2",
+    section: "1.2.7",
+    question:
+      "Dans la PLANIFICATION des tests, que doit inclure une définition complète du périmètre ?",
+    options: [
+      "D) Uniquement le budget",
+      "B) Toutes les exigences fonctionnelles et non fonctionnelles, implications des tests boîte noire et blanche",
+      "C) La couleur du logo",
+      "A) Uniquement le nom du projet"
+    ],
+    correct: 1,
+    explanation:
+      "Le plan de test doit inclure toutes les exigences fonctionnelles et non fonctionnelles.",
+    reference:
+      "Syllabus ISTQB Test Management v3.0 - Section 1.2.7 - Page 27"
+  },
+  {
+    id: 19,
+    level: "K2",
+    section: "1.2.7",
+    question:
+      "Que doit inclure un framework de gestion des risques robuste dans le plan de test ?",
+    options: [
+      "B) Analyse d'impact détaillée, identification des vulnérabilités et stratégies d'atténuation",
+      "D) Aucune considération de risque",
+      "A) Uniquement une liste de risques",
+      "C) Ignorer tous les risques"
+    ],
+    correct: 0,
+    explanation:
+      "Un framework robuste inclut une analyse d’impact, des vulnérabilités et des stratégies d’atténuation.",
+    reference:
+      "Syllabus ISTQB Test Management v3.0 - Section 1.2.7 - Page 27"
+  },
+  {
+    id: 20,
+    level: "K2",
+    section: "1.2.7",
+    question:
+      "Dans le CONTRÔLE des tests, que signifie 'gestion adaptable des processus' ?",
+    options: [
+      "B) Ajuster dynamiquement le processus en réponse aux nouvelles connaissances et à l'évolution du projet",
+      "D) Arrêter complètement les tests",
+      "C) Ignorer tous les changements",
+      "A) Ne jamais changer l'approche de test"
+    ],
+    correct: 0,
+    explanation:
+      "Le contrôle des tests consiste à ajuster dynamiquement les processus selon les nouvelles connaissances.",
+    reference:
+      "Syllabus ISTQB Test Management v3.0 - Section 1.2.7 - Page 28"
   }
-  // (et ainsi de suite pour les questions 11 à 20)
 ];
+
 
 
 

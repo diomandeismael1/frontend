@@ -10,6 +10,7 @@ const TestRisk = () => {
   const [score, setScore] = useState(0);
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
   const [quizCompleted, setQuizCompleted] = useState(false);
+  
 
 const questions = [
   {
@@ -350,6 +351,7 @@ const questions = [
     }
   };
 
+
   const handleRestart = () => {
     setCurrentQuestion(0);
     setSelectedAnswer(null);
@@ -366,13 +368,20 @@ const questions = [
     return "text-red-600";
   };
 
+  const titleQuiz = "Test basé sur les risques";
+
   const getScoreMessage = () => {
     const percentage = (score / questions.length) * 100;
-    if (percentage >= 80) return "Excellent ! Vous maîtrisez la stratégie de test 🎯";
+    if (percentage >= 80) return "Excellent ! Vous maîtrisez🎯"+ {titleQuiz};
     if (percentage >= 60) return "Bien ! Revoyez quelques concepts clés";
     return "Relisez la section 1.4 du syllabus attentivement";
   };
 
+  const quizResume = () => {
+    questions.map((question,index)=>{
+        <li key={index}>question {index+1}-{question.section}</li>
+    })
+  };
 
 
   if (quizCompleted) {

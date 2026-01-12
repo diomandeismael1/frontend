@@ -25,10 +25,20 @@ const Home1 = () => {
                 </Link>
             </AccordionDetails>
         </Accordion>
+        <Accordion>
+            <AccordionSummary 
+            expandIcon={<ArrowDownwardIcon />}
+            >
+                <Typography variant="h6">2. Tester tout au long du cycle de vie du développement 
+logiciel</Typography>
+            </AccordionSummary>
+            <AccordionDetails className='detail'>
+                <Link to="/sdlc"><Typography variant="body1">questionnaire 1</Typography></Link>
+            </AccordionDetails>
+            
+        </Accordion>
         
-    </div>
-    
+    </div>   
 )
 }
-
 export default Home1

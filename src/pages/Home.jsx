@@ -45,15 +45,6 @@ const Home = () => {
             <AccordionSummary 
             expandIcon={<ArrowDownwardIcon />}
             >
-                <Link to="/1.6">
-                    <Typography variant="h6">Quiz Outils de gestion du test 1.6</Typography>
-                </Link>
-            </AccordionSummary>
-        </Accordion>
-        <Accordion>
-            <AccordionSummary 
-            expandIcon={<ArrowDownwardIcon />}
-            >
                     <Typography variant="h6">2.Management du produit</Typography>
             </AccordionSummary>
             <AccordionDetails className='detail'>

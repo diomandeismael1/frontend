@@ -363,9 +363,9 @@ const questions = [
 
   const getScoreMessage = () => {
     const percentage = (score / questions.length) * 100;
-    if (percentage >= 80) return "Excellent ! Vous maîtrisez la stratégie de test 🎯";
+    if (percentage >= 80) return "Excellent ! Vous maîtrisez les metriques 🎯";
     if (percentage >= 60) return "Bien ! Revoyez quelques concepts clés";
-    return "Relisez la section 1.4 du syllabus attentivement";
+    return "Relisez la section 2.1 du syllabus attentivement";
   };
 
 
